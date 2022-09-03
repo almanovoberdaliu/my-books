@@ -33,7 +33,7 @@ namespace my_books.Controllers
         [HttpGet("get-book-by-id/{id}")]
         public IActionResult GetBookById(int id)
         {
-            var book = _booksService.GetBookById(id);
+            var book =  _booksService.GetBookById(id);
             return Ok(book);
         }
 
